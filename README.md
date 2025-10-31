@@ -19,59 +19,8 @@ This project implements a CNN-based image classifier for e-commerce clothing cat
 - Taxonomy: Gender > Clothing Type > Specific Category
 - Expected Accuracy: ~92%
 
-## Project Structure
 
-```
-atlas_clothing_classifier/
-├── data/
-│   ├── raw/                    # Downloaded dataset
-│   ├── processed/              # Preprocessed images
-│   └── splits/                 # Train/val/test CSV files
-├── models/
-│   ├── checkpoints/            # Training checkpoints
-│   └── final/                  # Final trained models
-├── src/
-│   ├── data/                   # Data loading and preprocessing
-│   ├── models/                 # Model architectures
-│   ├── training/               # Training scripts
-│   ├── evaluation/             # Evaluation and metrics
-│   └── inference/              # Inference pipeline
-├── notebooks/                  # Jupyter notebooks
-├── deployment/                 # Flask web app
-├── configs/                    # Configuration files
-├── results/                    # Evaluation results
-└── logs/                       # Training logs
-```
 
-## Setup Instructions
-
-### 1. Clone/Create Project
-
-```bash
-mkdir atlas_clothing_classifier
-cd atlas_clothing_classifier
-```
-
-### 2. Create Virtual Environment
-
-**Windows:**
-```cmd
-python -m venv venv
-venv\Scripts\activate
-```
-
-**macOS/Linux:**
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### 3. Install Dependencies
-
-```bash
-pip install --upgrade pip
-pip install -r requirements.txt
-```
 
 ### 4. Setup Kaggle API
 
@@ -99,9 +48,7 @@ python src/data/create_splits.py
 python src/training/train.py
 ```
 
-Training time:
-- GPU (NVIDIA GTX 1060+): 3-6 hours
-- CPU: 12-24 hours
+
 
 ### 8. Evaluate Model
 
@@ -109,14 +56,6 @@ Training time:
 python src/evaluation/evaluate.py
 ```
 
-### 9. Run Web Application
-
-```bash
-cd deployment
-python app.py
-```
-
-Access at: http://localhost:5000
 
 ## Usage
 
@@ -139,11 +78,7 @@ print(f"Category: {result['category']}")
 print(f"Confidence: {result['confidence']}")
 ```
 
-### Web API
 
-```bash
-curl -X POST -F "file=@image.jpg" http://localhost:5000/predict
-```
 
 ## Configuration
 
