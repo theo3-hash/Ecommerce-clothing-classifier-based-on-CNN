@@ -1,4 +1,4 @@
-# Atlas E-Commerce Clothing Classifier
+# CNN Based E-Commerce Clothing Classifier
 
 Complete deep learning project for automated clothing categorization using the Atlas dataset.
 
