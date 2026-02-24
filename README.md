@@ -22,7 +22,7 @@ This project implements a CNN-based image classifier for e-commerce clothing cat
 
 
 
-### 4. Setup Kaggle API
+### Setup Kaggle API
 
 1. Go to https://www.kaggle.com/account
 2. Create API token (downloads kaggle.json)
