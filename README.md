@@ -30,31 +30,7 @@ This project implements a CNN-based image classifier for e-commerce clothing cat
    - Windows: `C:\Users\YourName\.kaggle\`
    - macOS/Linux: `~/.kaggle/`
 
-### 5. Download Dataset
 
-```bash
-python src/data/download_dataset.py
-```
-
-### 6. Create Data Splits
-
-```bash
-python src/data/create_splits.py
-```
-
-### 7. Train Model
-
-```bash
-python src/training/train.py
-```
-
-
-
-### 8. Evaluate Model
-
-```bash
-python src/evaluation/evaluate.py
-```
 
 
 ## Usage
